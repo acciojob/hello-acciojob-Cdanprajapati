@@ -1,15 +1,43 @@
 <!DOCTYPE html>
-
-<html>
+<html lang="en">
 
 <head>
-	<link rel="stylesheet" href="styles.css">
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Accio Job</title>
+    <link rel="stylesheet" href="styles.css">
+    
+    <style>
+        .accio {
+            height: 150px;
+            width: 150px;
+            color: #000000;
+            border: 2px solid black; /* Added for visibility */
+            display: flex;
+            align-items: center;
+            justify-content: center;
+        }
+
+        /* ✅ Fixed selector */
+        .accio .hello-accio {
+            color: #ffffff;
+            background-color: #000;
+            margin-left: 32px; /* ✅ Fixed */
+            padding: 10px; /* ✅ Simplified */
+            text-align: center;
+        }
+    </style>
 </head>
 
 <body>
-	<!-- the entire body must be written by student -->
-    <script type="text/javascript" src="./script.js">
-</script>
+
+    <main class="accio" id="job">
+        <p class="hello-accio">
+            Hello Accio Job
+        </p>
+    </main>
+
+    <script type="text/javascript" src="./script.js"></script>
 
 </body>
 
